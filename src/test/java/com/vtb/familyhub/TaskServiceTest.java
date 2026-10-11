@@ -50,5 +50,6 @@ class TaskServiceTest {
 
         // Ожидаем пресечение несанкционированной выплаты
         assertThrows(IllegalStateException.class, () -> taskService.approveTask(1L, 1L));
+
     }
 }
